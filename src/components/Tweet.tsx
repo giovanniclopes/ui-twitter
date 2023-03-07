@@ -1,12 +1,12 @@
 interface TweetProps {
   user: string;
   children: string;
-  likes?: number
+  likes?: number;
 }
 
 export function Tweet(props: TweetProps) {
   return (
-    <div>
+    <div className="tweet" style={{ borderRadius: 8 }}>
       <strong>{props.user}</strong>
       <p>{props.children}</p>
       <button>Like {props.likes ?? 0}</button>
