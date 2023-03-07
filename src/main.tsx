@@ -1,5 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+import { House } from "phosphor-react";
 
 import "./global.css";
 
@@ -11,7 +12,19 @@ ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
       <aside className="sidebar">
         <img className="logo" src={twitterLogo} alt="Logo" />
 
-        <nav></nav>
+        <nav className="main-navigation">
+          <a href="">
+            <House />
+            Home
+          </a>
+          <a href="">Explore</a>
+          <a href="">Notifications</a>
+          <a href="">Messages</a>
+          <a href="">Bookmarks</a>
+          <a href="">Lists</a>
+          <a href="">Profile</a>
+          <a href="">More</a>
+        </nav>
 
         <button className="new-tweet" type="button">
           Tweet
