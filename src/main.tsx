@@ -6,6 +6,8 @@ import "./global.css";
 
 import { Tweet } from "./components/Tweet";
 import { Sidebar } from "./components/Sidebar";
+import { Header } from "./components/Header";
+import { Separator } from "./components/Separator";
 
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <React.StrictMode>
@@ -13,10 +15,7 @@ ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
       <Sidebar />
       <div className="content">
         <main className="timeline">
-          <div className="timeline-header">
-            Home
-            <Sparkle />
-          </div>
+          <Header title="Home" />
 
           <form className="new-tweet-form">
             <label htmlFor="tweet">
@@ -30,7 +29,7 @@ ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
             <button type="submit">Tweet</button>
           </form>
 
-          <div className="separator" />
+          <Separator />
 
           <Tweet />
           <Tweet />
