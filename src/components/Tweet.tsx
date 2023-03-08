@@ -1,8 +1,8 @@
-import { ArrowsClockwise, ChatCircle, Heart } from 'phosphor-react';
-import './Tweet.css'
+import { ArrowsClockwise, ChatCircle, Heart } from "phosphor-react";
+import "./Tweet.css";
 
 interface tweetProps {
-  content: string
+  content: string;
 }
 
 export function Tweet(props: tweetProps) {
@@ -19,17 +19,17 @@ export function Tweet(props: tweetProps) {
         <p>{props.content}</p>
 
         <div className="tweet-content-footer">
-          <button type='button'>
+          <button type="button">
             <ChatCircle />
             20
           </button>
 
-          <button type='button'>
+          <button type="button">
             <ArrowsClockwise />
             20
           </button>
 
-          <button type='button'>
+          <button type="button">
             <Heart />
             20
           </button>
