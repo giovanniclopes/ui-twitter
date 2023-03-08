@@ -6,7 +6,7 @@ import { Tweet } from "../components/Tweet";
 import "./Timeline.css";
 
 export function TimeLine() {
-  const [newTweet, setNewTweet] = useState('')
+  const [newTweet, setNewTweet] = useState("");
   const [tweets, setTweets] = useState([
     "Meu primeiro tweet",
     "Teste",
@@ -17,15 +17,15 @@ export function TimeLine() {
     event.preventDefault();
 
     setTweets([newTweet, ...tweets]);
-    setNewTweet('')
+    setNewTweet("");
   }
 
-    function handleHotKeySubmit(event: KeyboardEvent) {
-      if (event.key === "Enter" && (event.ctrlKey || event.metaKey)) {
-        setTweets([newTweet, ...tweets]);
-        setNewTweet("");
-      }
+  function handleHotKeySubmit(event: KeyboardEvent) {
+    if (event.key === "Enter" && (event.ctrlKey || event.metaKey)) {
+      setTweets([newTweet, ...tweets]);
+      setNewTweet("");
     }
+  }
 
   return (
     <main className="timeline">
